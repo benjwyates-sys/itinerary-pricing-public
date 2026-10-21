@@ -1,0 +1,15 @@
+/data/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+~$*.xlsx
+
+# costing output, produced by test runs
+*_FINAL_*.xlsx
+
+# macOS Finder
+.DS_Store
+
+# deck build artifacts
+docs/deck/node_modules/

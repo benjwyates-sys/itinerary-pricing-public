@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    a { color: #B85042; } a:hover { color: #92392F; }
+  </style>
+</helmet>
+
+<div style="display: flex; width: 1440px; height: 900px; background: #FAF8F5; color: #241C19;">
+
+  <!-- sidebar -->
+  <div style="display: flex; flex-direction: column; justify-content: space-between; width: 248px; flex-shrink: 0; background: #2B211E; padding: 28px 20px;">
+    <div style="display: flex; flex-direction: column; gap: 34px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="width: 26px; height: 26px; border-radius: 7px; background: #B85042;"></div>
+        <span style="color: #FFFFFF; font-size: 15px; font-weight: 600; letter-spacing: -0.01em;">Costing</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <div style="display: flex; align-items: center; gap: 11px; padding: 11px 12px; border-radius: 8px; background: #3D2F2B;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
+          <span style="color: #FFFFFF; font-size: 14px; font-weight: 500;">Price a trip</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 11px; padding: 11px 12px; border-radius: 8px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A2938E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h10"/></svg>
+          <span style="color: #A2938E; font-size: 14px;">My quotes</span>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 11px; padding-top: 18px; border-top: 1px solid #3D2F2B;">
+      <div style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #5E8575; color: #FFFFFF; font-size: 12px; font-weight: 600;">SA</div>
+      <div style="display: flex; flex-direction: column; gap: 1px;">
+        <span style="color: #FFFFFF; font-size: 13px; font-weight: 500;">Sample Agent</span>
+        <span style="color: #8A7B76; font-size: 11px;">Travel consultant</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div style="display: flex; flex-direction: column; flex-grow: 1; min-width: 0;">
+
+    <!-- header -->
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; padding: 34px 48px 24px; background: #FFFFFF; border-bottom: 1px solid #EDE7E0;">
+      <div style="display: flex; flex-direction: column; gap: 9px;">
+        <span style="font-size: 12.5px; color: #7A6A65;">Trip_Sample_Dubrovnik.xlsx</span>
+        <h1 style="margin: 0; font-size: 26px; font-weight: 600; letter-spacing: -0.02em;">Sample party — Dubrovnik</h1>
+        <span style="font-size: 13.5px; color: #7A6A65;">11 experiences · 8–12 June 2026 · 5 travellers</span>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 5px;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 32px; font-weight: 500; letter-spacing: -0.02em;">€1,621.00</span>
+        <span style="font-size: 12.5px; color: #B85042;">2 lines still to confirm</span>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div style="display: flex; flex-direction: column; gap: 26px; flex-grow: 1; padding: 28px 48px; overflow: hidden;">
+
+      <!-- needs a quick check -->
+      <div style="display: flex; flex-direction: column; gap: 11px;">
+        <div style="display: flex; align-items: center; gap: 9px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#B85042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.3 2.4c-.6.2-.9.6-.9 1.2v.4"/><path d="M12 16.6h.01"/></svg>
+          <span style="font-size: 15px; font-weight: 600;">2 lines need a quick check</span>
+          <span style="font-size: 13px; color: #7A6A65;">— about ten seconds each</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+          <div style="display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; background: #FFFFFF; border: 1px solid #E4D6D2; border-radius: 11px;">
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 11.5px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: #7A6A65;">Line 2 · your itinerary says</span>
+              <span style="font-size: 15.5px; font-weight: 500;">“Old Town walking tour (private)”</span>
+            </div>
+            <span style="font-size: 13.5px; color: #7A6A65;">Two things in the rate sheet could match this, and they price differently.</span>
+            <div style="display: flex; align-items: center; justify-content: center; height: 42px; border-radius: 8px; background: #B85042; color: #FFFFFF; font-size: 14px; font-weight: 500;">Choose which one</div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; background: #FFFFFF; border: 1px solid #E4D6D2; border-radius: 11px;">
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 11.5px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: #7A6A65;">Line 7 · your itinerary says</span>
+              <span style="font-size: 15.5px; font-weight: 500;">“Cooking class at Gruz market”</span>
+            </div>
+            <span style="font-size: 13.5px; color: #7A6A65;">Close to one experience in the rate sheet, but not worded the same way.</span>
+            <div style="display: flex; align-items: center; justify-content: center; height: 42px; border-radius: 8px; background: #B85042; color: #FFFFFF; font-size: 14px; font-weight: 500;">Choose which one</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- needs a supplier quote -->
+      <div style="display: flex; flex-direction: column; gap: 11px;">
+        <div style="display: flex; align-items: center; gap: 9px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8A6D3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H7l-3 3z"/></svg>
+          <span style="font-size: 15px; font-weight: 600;">1 line needs a supplier quote</span>
+          <span style="font-size: 13px; color: #7A6A65;">— you'll need to ask; it can't be priced from the sheet</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 20px; padding: 16px 20px; background: #FCF7EC; border: 1px solid #E8DCC0; border-radius: 11px;">
+          <div style="display: flex; flex-direction: column; gap: 4px; flex-grow: 1;">
+            <span style="font-size: 15px; font-weight: 500;">Private yacht charter — 15 August</span>
+            <span style="font-size: 13.5px; color: #7A6A65;">Your rate sheet marks 15 August as unavailable (Assumption). Nothing was guessed for this line.</span>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: center; height: 42px; padding: 0 18px; border-radius: 8px; background: #FFFFFF; border: 1px solid #D9CFC6; font-size: 14px; font-weight: 500;">Email supplier</div>
+          <div style="display: flex; align-items: center; justify-content: center; height: 42px; padding: 0 18px; border-radius: 8px; background: #FFFFFF; border: 1px solid #D9CFC6; font-size: 14px; font-weight: 500;">Enter a price</div>
+        </div>
+      </div>
+
+      <!-- priced -->
+      <div style="display: flex; flex-direction: column; gap: 11px; min-height: 0;">
+        <div style="display: flex; align-items: center; gap: 9px;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4A6E5F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+          <span style="font-size: 15px; font-weight: 600;">8 lines priced</span>
+          <span style="font-size: 13px; color: #7A6A65;">— nothing needed from you</span>
+        </div>
+        <div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #EDE7E0; border-radius: 11px; overflow: hidden;">
+          <div style="display: flex; align-items: center; gap: 20px; padding: 13px 20px; border-bottom: 1px solid #F3EEE8;">
+            <span style="font-size: 14px; flex-grow: 1;">Airport transfer on arrival</span>
+            <span style="font-size: 12.5px; color: #7A6A65;">per group, 4–8</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; width: 84px; text-align: right;">€68.00</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 20px; padding: 13px 20px; border-bottom: 1px solid #F3EEE8;">
+            <span style="font-size: 14px; flex-grow: 1;">Game of Thrones Walking Tour</span>
+            <span style="font-size: 12.5px; color: #7A6A65;">5 × €38.00</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; width: 84px; text-align: right;">€190.00</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 20px; padding: 13px 20px; border-bottom: 1px solid #F3EEE8;">
+            <span style="font-size: 14px; flex-grow: 1;">Elafiti islands cruise</span>
+            <span style="font-size: 12.5px; color: #7A6A65;">5 × €95.00</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; width: 84px; text-align: right;">€475.00</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 20px; padding: 13px 20px; border-bottom: 1px solid #F3EEE8;">
+            <span style="font-size: 14px; flex-grow: 1;">Sunset sea kayaking</span>
+            <span style="font-size: 12.5px; color: #7A6A65;">5 × €60.00 · PM supplement</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; width: 84px; text-align: right;">€300.00</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 20px; padding: 13px 20px;">
+            <span style="font-size: 14px; color: #7A6A65; flex-grow: 1;">and 4 more</span>
+            <span style="font-size: 13px; color: #B85042;">Show all</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 48px; background: #FFFFFF; border-top: 1px solid #EDE7E0;">
+      <span style="font-size: 13.5px; color: #7A6A65;">Your original file hasn't been touched. The costed copy is a new file.</span>
+      <div style="display: flex; align-items: center; gap: 11px;">
+        <div style="display: flex; align-items: center; justify-content: center; height: 44px; padding: 0 20px; border-radius: 9px; border: 1px solid #D9CFC6; font-size: 14.5px; font-weight: 500;">Download as is</div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 9px; height: 44px; padding: 0 22px; border-radius: 9px; background: #B85042; color: #FFFFFF; font-size: 14.5px; font-weight: 500;">
+          Check the 2 lines
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "images_survive_roundtrip": true,
+  "conditional_formatting_survives": true,
+  "openpyxl": "3.1.5",
+  "pillow": "12.3.0"
+}

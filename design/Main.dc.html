@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    a { color: #B85042; } a:hover { color: #92392F; }
+  </style>
+</helmet>
+
+<div style="display: flex; width: 1440px; height: 900px; background: #FAF8F5; color: #241C19;">
+
+  <!-- sidebar -->
+  <div style="display: flex; flex-direction: column; justify-content: space-between; width: 248px; flex-shrink: 0; background: #2B211E; padding: 28px 20px;">
+    <div style="display: flex; flex-direction: column; gap: 34px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="width: 26px; height: 26px; border-radius: 7px; background: #B85042;"></div>
+        <span style="color: #FFFFFF; font-size: 15px; font-weight: 600; letter-spacing: -0.01em;">Costing</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <div style="display: flex; align-items: center; gap: 11px; padding: 11px 12px; border-radius: 8px; background: #3D2F2B;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
+          <span style="color: #FFFFFF; font-size: 14px; font-weight: 500;">Price a trip</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 11px; padding: 11px 12px; border-radius: 8px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A2938E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h10"/></svg>
+          <span style="color: #A2938E; font-size: 14px;">My quotes</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 11px; padding: 11px 12px; border-radius: 8px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A2938E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.6 2.6 0 1 1 3.4 2.5c-.6.2-.9.7-.9 1.3v.4"/><path d="M12 17h.01"/></svg>
+          <span style="color: #A2938E; font-size: 14px;">Help</span>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 11px; padding-top: 18px; border-top: 1px solid #3D2F2B;">
+      <div style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #5E8575; color: #FFFFFF; font-size: 12px; font-weight: 600;">SA</div>
+      <div style="display: flex; flex-direction: column; gap: 1px;">
+        <span style="color: #FFFFFF; font-size: 13px; font-weight: 500;">Sample Agent</span>
+        <span style="color: #8A7B76; font-size: 11px;">Travel consultant</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div style="display: flex; flex-direction: column; gap: 30px; flex-grow: 1; padding: 46px 56px;">
+    <div style="display: flex; flex-direction: column; gap: 7px;">
+      <h1 style="margin: 0; font-size: 30px; font-weight: 600; letter-spacing: -0.02em;">Price a trip</h1>
+      <p style="margin: 0; font-size: 15px; color: #7A6A65;">Drop in an itinerary and get it back costed. Your original file is never changed.</p>
+    </div>
+
+    <!-- drop zone -->
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 62px 40px; background: #FFFFFF; border: 2px dashed #D9CFC6; border-radius: 14px;">
+      <div style="display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 50%; background: #FBEFEC;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B85042" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;">
+        <span style="font-size: 17px; font-weight: 500;">Drop an itinerary here</span>
+        <span style="font-size: 13.5px; color: #7A6A65;">Excel file, any of your standard templates</span>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; height: 44px; padding: 0 24px; border-radius: 9px; background: #B85042; color: #FFFFFF; font-size: 14.5px; font-weight: 500;">Choose a file</div>
+    </div>
+
+    <!-- recent -->
+    <div style="display: flex; flex-direction: column; gap: 13px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;">
+        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #7A6A65;">Recent</span>
+        <span style="font-size: 13px; color: #B85042;">View all</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+
+        <div style="display: flex; align-items: center; gap: 18px; padding: 15px 20px; background: #FFFFFF; border: 1px solid #EDE7E0; border-radius: 11px;">
+          <div style="display: flex; flex-direction: column; gap: 3px; flex-grow: 1;">
+            <span style="font-size: 14.5px; font-weight: 500;">Sample party — Dubrovnik</span>
+            <span style="font-size: 12.5px; color: #7A6A65;">7 experiences · 12–16 May</span>
+          </div>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14.5px; font-weight: 500;">€1,728.00</span>
+          <div style="display: flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 20px; background: #EDF3F0;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4A6E5F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+            <span style="font-size: 12px; font-weight: 500; color: #4A6E5F;">Sent</span>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 18px; padding: 15px 20px; background: #FFFFFF; border: 1px solid #EDE7E0; border-radius: 11px;">
+          <div style="display: flex; flex-direction: column; gap: 3px; flex-grow: 1;">
+            <span style="font-size: 14.5px; font-weight: 500;">Sample honeymoon — Split &amp; Hvar</span>
+            <span style="font-size: 12.5px; color: #7A6A65;">5 experiences · 3–9 June</span>
+          </div>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14.5px; font-weight: 500;">€2,104.00</span>
+          <div style="display: flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 20px; background: #EDF3F0;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4A6E5F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+            <span style="font-size: 12px; font-weight: 500; color: #4A6E5F;">Sent</span>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 18px; padding: 15px 20px; background: #FFFFFF; border: 1px solid #E4D6D2; border-radius: 11px;">
+          <div style="display: flex; flex-direction: column; gap: 3px; flex-grow: 1;">
+            <span style="font-size: 14.5px; font-weight: 500;">Sample party — Dubrovnik</span>
+            <span style="font-size: 12.5px; color: #7A6A65;">11 experiences · 8–12 June</span>
+          </div>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14.5px; font-weight: 500; color: #7A6A65;">€1,621.00</span>
+          <div style="display: flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 20px; background: #FBEFEC;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B85042" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+            <span style="font-size: 12px; font-weight: 500; color: #B85042;">3 to check</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
