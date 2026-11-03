@@ -4,10 +4,6 @@ Turns a travel agent's Excel costing workbook into a structured price catalog, t
 fills in the cost column on client itineraries automatically — without ever guessing a
 price it isn't sure of, and without ever touching the operator's original files.
 
-> **Note:** this project was built for a real client. All client data — agency and
-> operator names, supplier rates, and real trip details — has been removed. Everything
-> in `samples/` and `demo/` is synthetic fixture data, invented to exercise the same
-> shapes the real sheets have.
 
 ## The core idea: the LLM does language, Python does money
 
